@@ -443,7 +443,7 @@
 		pinctrl-names = "default", "sleep";
 		pinctrl-0 = <&qupv3_se13_cts_active &qupv3_se13_rtstx_active &qupv3_se13_rx_active>;
 		pinctrl-1 = <&qupv3_se13_cts_sleep &qupv3_se13_rtstx_sleep &qupv3_se13_rx_sleep>;
-		interrupts-extended = <&pdc GIC_SPI 585 IRQ_TYPE_LEVEL_HIGH>;
+		interrupts-extended = <&intc GIC_SPI 585 IRQ_TYPE_LEVEL_HIGH>;
 		qcom,wrapper-core = <&qupv3_2>;
 		status = "okay";
 		/delete-property/qcom,wakeup-byte;
