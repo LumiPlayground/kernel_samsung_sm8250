@@ -1,34 +1,40 @@
 config SEC_X1Q_PROJECT
+	depends on ARCH_KONA
 	default n
 	bool "Samsung X1Q Project"
 	help
 	  Support for Samsung X1Q Project
 
 config MACH_X1Q_KOR_SINGLE
+	depends on SEC_X1Q_PROJECT
 	default n
 	bool "Samsung X1Q KOR SQ"
 	help
 	  Support for Samsung X1Q KOR SQ device.
 
 config SEC_Y2Q_PROJECT
+	depends on ARCH_KONA
 	default n
 	bool "Samsung Y2Q Project"
 	help
 	  Support for Samsung Y2Q Project
 
 config MACH_Y2Q_KOR_SINGLE
+	depends on SEC_Y2Q_PROJECT
 	default n
 	bool "Samsung Y2Q KOR SQ"
 	help
 	  Support for Samsung Y2Q KOR SQ device.
 
 config SEC_Z3Q_PROJECT
+	depends on ARCH_KONA
 	default n
 	bool "Samsung Z3Q Project"
 	help
 	  Support for Samsung Z3Q Project
 
 config MACH_Z3Q_KOR_SINGLE
+	depends on SEC_Z3Q_PROJECT
 	default n
 	bool "Samsung Z3Q KOR SQ"
 	help
