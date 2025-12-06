@@ -16,8 +16,6 @@ int release_value[MAX_RES_COUNT];
 #define NUM_BUS_TABLE 13
 #define BUS_W 4	/* SM8250 DDR Voting('w' for DDR is 4) */
 
-void set_hmp(int level);
-
 int ab_ib_bus_vectors[NUM_BUS_TABLE][2] = {
 	{0, 0},		/* 0 */
 	{0, 200},	/* 1 */
@@ -84,6 +82,24 @@ int trans_freq_to_idx(int request_ddr_freq) {
 	return 0;
 }
 
+#ifdef USE_HMP_BOOST
+void set_hmp(int level)
+{
+	if (level != current_hmp_boost) {
+		if (level == 0) {
+			level = -current_hmp_boost;
+			current_hmp_boost = 0;
+		} else {
+			current_hmp_boost = level;
+		}
+		pr_booster("[Input Booster2] ******      set_hmp : %d ( %s )\n", level, __func__);
+		if (sched_set_boost(level) < 0) {
+			pr_booster("[Input Booster2] ******            !!! fail to HMP !!!\n"); \
+		}
+	}
+}
+#endif
+
 void ib_set_booster(int* qos_values)
 {
 	int value = -1;
@@ -107,7 +123,9 @@ void ib_set_booster(int* qos_values)
 			msm_bus_scale_client_update_request(bus_hdl, ddr_new_value);
 			break;
 		case HMPBOOST:
+#ifdef USE_HMP_BOOST
 			set_hmp(value);
+#endif
 			pr_booster("ib_set_booster :: hmpboost value : %d", value);
 			break;
 		case LPMBIAS:
@@ -144,7 +162,9 @@ void ib_release_booster(long *rel_flags)
 			msm_bus_scale_client_update_request(bus_hdl, ddr_new_value);
 			break;
 		case HMPBOOST:
+#ifdef USE_HMP_BOOST
 			set_hmp(value);
+#endif
 			break;
 		case LPMBIAS:
 			pm_qos_update_request(&lpm_bias_pm_qos_request, value);
@@ -187,28 +207,5 @@ int set_freq_limit(unsigned long id, unsigned int freq)
 {
 	pr_err("%s is not yet implemented\n", __func__);
 	return 0;
-}
-#endif
-
-#ifdef USE_HMP_BOOST
-void set_hmp(int level)
-{
-	if (level != current_hmp_boost) {
-		if (level == 0) {
-			level = -current_hmp_boost;
-			current_hmp_boost = 0;
-		} else {
-			current_hmp_boost = level;
-		}
-		pr_booster("[Input Booster2] ******      set_hmp : %d ( %s )\n", level, __func__);
-		if (sched_set_boost(level) < 0) {
-			pr_booster("[Input Booster2] ******            !!! fail to HMP !!!\n"); \
-		}
-	}
-}
-#else
-void set_hmp(int level)
-{
-	pr_booster("It does not use hmp\n");
 }
 #endif
