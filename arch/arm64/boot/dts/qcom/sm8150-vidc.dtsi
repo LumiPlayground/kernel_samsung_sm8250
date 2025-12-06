@@ -126,7 +126,7 @@
 			qcom,iommu-dma-addr-pool = <0x500000 0xdfb00000>;
 			qcom,iommu-faults = "non-fatal";
 			qcom,iommu-pagetable = "LLC";
-			qcom,iommu-vmid = <0x8>; /* VMID_CP_BITSTREAM */
+			qcom,iommu-vmid = <0x9>; /* VMID_CP_BITSTREAM */
 			buffer-types = <0x241>;
 			virtual-addr-pool = <0x500000 0xdfb00000>;
 			qcom,secure-context-bank;
