@@ -32,7 +32,7 @@
 // #include "sm8150-sec-r3q-mst-r00.dtsi"
 #include "sm8150-camera-sensor-r5q-r01.dtsi"
 #include "sm8150-s2mu107.dtsi"
-#include "../../../../../drivers/motor/tuning/r5q_motor_tuning.dtsi"
+#include "../r5q_motor_tuning.dtsi"
 
 / {
 	model = "Samsung R5Q PROJECT Rev08";

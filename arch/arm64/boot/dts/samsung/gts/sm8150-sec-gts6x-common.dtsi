@@ -11,7 +11,7 @@
  */
 
 #include "sm8150-sec-gts6l-audio.dtsi"
-#include "../../../../../drivers/motor/tuning/beyond0qlte_motor_tuning.dtsi"
+#include "../beyond0qlte_motor_tuning.dtsi"
 #include "sm8150-sec-gts6x-input-common.dtsi"
 #include <dt-bindings/phy/qcom,sm8150-qmp-usb3.h>
 

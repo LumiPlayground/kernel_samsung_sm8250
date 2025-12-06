@@ -11,7 +11,7 @@
  */
 
 #include "sm8150-sec-beyond1qlte-common.dtsi"
-#include "../../../../../drivers/motor/tuning/beyond1qlte_motor_tuning.dtsi"
+#include "../beyond1qlte_motor_tuning.dtsi"
 #include "sm8150-sec-beyond1qlte-optics-r12.dtsi"
 
 &soc {

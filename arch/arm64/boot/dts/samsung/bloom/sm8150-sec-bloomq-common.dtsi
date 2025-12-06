@@ -14,7 +14,7 @@
 #include "sm8150-sec-beyondq-mst.dtsi"
 #include "sm8150-sec-bloomq-input-common.dtsi"
 #include <dt-bindings/phy/qcom,sm8150-qmp-usb3.h>
-#include "../../../../../../drivers/motor/tuning/bloomqlte_motor_tuning.dtsi"
+#include "../bloomqlte_motor_tuning.dtsi"
 
 &reserved_memory {
 	camera_mem: camera_mem_region {
