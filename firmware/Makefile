@@ -12,6 +12,8 @@ fwabs := $(addprefix $(srctree)/,$(filter-out /%,$(fwdir)))$(filter /%,$(fwdir))
 
 fw-external-y := $(subst $(quote),,$(CONFIG_EXTRA_FIRMWARE))
 
+fw-external-$(CONFIG_TOUCHSCREEN_SEC_TS_Y771) += tsp_sec/y761_beyond0_phole.bin tsp_sec/y771_beyond1_phole.bin \
+						tsp_sec/y771_beyond2_phole.bin tsp_sec/y771_beyondx_phole.bin
 fw-external-$(CONFIG_TOUCHSCREEN_SEC_TS_Y79A) += tsp_sec/y771_y2_ub.bin tsp_sec/y79a_y2.bin tsp_sec/y79a_x1.bin \
 							tsp_sec/y79a_y2_ub.bin tsp_sec/y79a_x1_ub.bin tsp_sec/y79a_z3.bin
 
