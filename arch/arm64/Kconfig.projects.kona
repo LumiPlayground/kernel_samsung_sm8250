@@ -39,5 +39,3 @@ config MACH_Z3Q_KOR_SINGLE
 	bool "Samsung Z3Q KOR SQ"
 	help
 	  Support for Samsung Z3Q KOR SQ device.
-
-
