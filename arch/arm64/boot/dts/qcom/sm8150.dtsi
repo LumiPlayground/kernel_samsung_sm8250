@@ -989,32 +989,28 @@
 		qcom,count-unit = <0x10000>;
 	};
 
-	cdsp_cdsp_l3_lat: qcom,cdsp-cdsp-l3-lat {
-		compatible = "devfreq-simple-dev";
-		clock-names = "devfreq_clk";
-		clocks = <&clock_cpucc L3_MISC_VOTE_CLK>;
-		governor = "powersave";
-	};
+	qcom,devfreq-l3 {
+		compatible = "qcom,devfreq-fw";
+		reg = <0x18321000 0x4>, <0x18321100 0x500>, <0x18321320 0x4>;
+		reg-names = "en-base", "ftbl-base", "perf-base";
 
-	cpu0_cpu_l3_lat: qcom,cpu0-cpu-l3-lat {
-		compatible = "devfreq-simple-dev";
-		clock-names = "devfreq_clk";
-		clocks = <&clock_cpucc L3_CLUSTER0_VOTE_CLK>;
-		governor = "performance";
-	};
+		qcom,ftbl-row-size = <0x20>;
 
-	cpu4_cpu_l3_lat: qcom,cpu4-cpu-l3-lat {
-		compatible = "devfreq-simple-dev";
-		clock-names = "devfreq_clk";
-		clocks = <&clock_cpucc L3_CLUSTER1_VOTE_CLK>;
-		governor = "performance";
-	};
+		cpu0_cpu_l3_lat: qcom,cpu0-cpu-l3-lat {
+			compatible = "qcom,devfreq-fw-voter";
+		};
 
-	cpu7_cpu_l3_lat: qcom,cpu7-cpu-l3-lat {
-		compatible = "devfreq-simple-dev";
-		clock-names = "devfreq_clk";
-		clocks = <&clock_cpucc L3_CLUSTER2_VOTE_CLK>;
-		governor = "performance";
+		cpu4_cpu_l3_lat: qcom,cpu4-cpu-l3-lat {
+			compatible = "qcom,devfreq-fw-voter";
+		};
+
+		cpu7_cpu_l3_lat: qcom,cpu7-cpu-l3-lat {
+			compatible = "qcom,devfreq-fw-voter";
+		};
+
+		cdsp_cdsp_l3_lat: qcom,cdsp-cdsp-l3-lat {
+			compatible = "qcom,devfreq-fw-voter";
+		};
 	};
 
 	cpu0_cpu_llcc_lat: qcom,cpu0-cpu-llcc-lat {
@@ -1415,16 +1411,8 @@
 	};
 
 	clock_cpucc: qcom,cpucc {
-		compatible = "qcom,clk-cpu-osm";
-		reg = <0x18321000 0x1400>,
-			<0x18323000 0x1400>,
-			<0x18325800 0x1400>,
-			<0x18327800 0x1400>;
-		reg-names = "osm_l3_base", "osm_pwrcl_base",
-			"osm_perfcl_base", "osm_perfpcl_base";
-		l3-devs = <&cpu0_cpu_l3_lat &cpu4_cpu_l3_lat &cdsp_cdsp_l3_lat
-			&cpu7_cpu_l3_lat>;
-
+		compatible = "qcom,dummycc";
+		clock-output-names = "cpucc_clocks";
 		#clock-cells = <1>;
 	};
 
