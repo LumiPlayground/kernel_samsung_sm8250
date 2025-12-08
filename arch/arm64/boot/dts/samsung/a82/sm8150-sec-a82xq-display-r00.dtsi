@@ -10,11 +10,11 @@
  * GNU General Public License for more details.
  */
 
-#include "../../../../../drivers/gpu/drm/msm/samsung_lego/MAFPC/ss_dsi_mafpc_cmd_HAB.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung_lego/SELF_DISPLAY/self_display_cmd_HAB.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung_lego/S6E3HAB_AMB677TY01/dsi_panel_S6E3HAB_AMB677TY01_wqhd_octa_cmd.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung_lego/PBA_BOOTING/dsi_panel_PBA_BOOTING_fhd_video.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung_lego/PBA_BOOTING_DSI1/dsi_panel_PBA_BOOTING_fhd_video_dsi1.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/MAFPC/ss_dsi_mafpc_cmd_HAB.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/SELF_DISPLAY/self_display_cmd_HAB.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/S6E3HAB_AMB677TY01/dsi_panel_S6E3HAB_AMB677TY01_wqhd_octa_cmd.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/PBA_BOOTING/dsi_panel_PBA_BOOTING_fhd_video.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/PBA_BOOTING_DSI1/dsi_panel_PBA_BOOTING_fhd_video_dsi1.dtsi"
 
 /{
 	aliases {

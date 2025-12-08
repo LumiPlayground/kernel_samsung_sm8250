@@ -10,7 +10,7 @@
  * GNU General Public License for more details.
  */
 
-#include "../qcom/sm8150-audio-overlay.dtsi"
+#include /sm8150-audio-overlay.dtsi"
 
 &wcd934x_cdc {
 	swr_master {

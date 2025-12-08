@@ -18,10 +18,10 @@
 #include <dt-bindings/clock/qcom,rpmh.h>
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 
-#include "../qcom/sm8150-mtp.dtsi"
-#include "../qcom/sdx5xm-external-soc.dtsi"
-#include "../qcom/sm8150-sdx50m.dtsi"
-#include "sm8150-sec-common.dtsi"
+#include /sm8150-mtp.dtsi"
+#include /sdx5xm-external-soc.dtsi"
+#include /sm8150-sdx50m.dtsi"
+#include "../sm8150-sec-common.dtsi"
 #include "sm8150-sec-boltq5g-pm-common.dtsi"
 #include "sm8150-sec-boltq5g-input-common.dtsi"
 #include "sm8150-sec-boltq5g-r08.dtsi"
@@ -29,7 +29,7 @@
 #include "sm8150-sec-boltq5g-display-r00.dtsi"
 #include "sm8150-sec-boltq5g-displayport-r00.dtsi"
 #include "battery-data-boltq5g-common.dtsi"
-#include "sm8150-max77705.dtsi"
+#include "../sm8150-max77705.dtsi"
 
 / {
 	model = "Samsung BOLTQ5G PROJECT Rev08";

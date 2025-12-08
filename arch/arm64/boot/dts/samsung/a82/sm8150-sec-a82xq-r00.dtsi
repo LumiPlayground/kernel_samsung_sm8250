@@ -13,7 +13,7 @@
 #include "sm8150-sec-a82xq-common.dtsi"
 #include "sm8150-sec-a82xq-audio.dtsi"
 #include "sm8150-sec-a82xq-mst-r00.dtsi"
-#include "sm8150-max77705.dtsi"
+#include "../sm8150-max77705.dtsi"
 
 &soc {
 	rpmh-regulator-ldoa17 {

@@ -10,14 +10,14 @@
  * GNU General Public License for more details.
  */
 
-#include "../../../../../drivers/gpu/drm/msm/samsung/SELF_DISPLAY/self_display_cmd_HA9.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/SELF_DISPLAY/self_display_cmd_HA9_AMF670UH01.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/S6E3HA9_AMB611WE01/dsi_panel_S6E3HA9_AMB611WE01_fhd_octa_cmd.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/S6E3HA9_AMF670UH01/dsi_panel_S6E3HA9_AMF670UH01_fhd_octa_cmd.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/S6E36W3_AMB114EU09/dsi_panel_S6E36W3_AMB114EU09_octa_cmd.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/SELF_DISPLAY/self_display_cmd_6W3.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/PBA_BOOTING/dsi_panel_PBA_BOOTING_fhd_video.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/PBA_BOOTING_DSI1/dsi_panel_PBA_BOOTING_fhd_video_dsi1.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/SELF_DISPLAY/self_display_cmd_HA9.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/SELF_DISPLAY/self_display_cmd_HA9_AMF670UH01.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/S6E3HA9_AMB611WE01/dsi_panel_S6E3HA9_AMB611WE01_fhd_octa_cmd.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/S6E3HA9_AMF670UH01/dsi_panel_S6E3HA9_AMF670UH01_fhd_octa_cmd.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/S6E36W3_AMB114EU09/dsi_panel_S6E36W3_AMB114EU09_octa_cmd.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/SELF_DISPLAY/self_display_cmd_6W3.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/PBA_BOOTING/dsi_panel_PBA_BOOTING_fhd_video.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/PBA_BOOTING_DSI1/dsi_panel_PBA_BOOTING_fhd_video_dsi1.dtsi"
 
 /{
 	aliases {

@@ -18,8 +18,8 @@
 #include <dt-bindings/clock/qcom,rpmh.h>
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 
-#include "../qcom/sm8150-mtp.dtsi"
-#include "sm8150-sec-common.dtsi"
+#include /sm8150-mtp.dtsi"
+#include "../sm8150-sec-common.dtsi"
 #include "sm8150-sec-gts5l-pm-common.dtsi"
 #include "sm8150-sec-gts6l-r00.dtsi"
 #include "sm8150-sec-gts6l-pinctrl-r00.dtsi"

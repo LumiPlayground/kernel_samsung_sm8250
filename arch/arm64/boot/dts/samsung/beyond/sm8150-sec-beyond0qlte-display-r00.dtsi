@@ -10,10 +10,10 @@
  * GNU General Public License for more details.
  */
 
-#include "../../../../../drivers/gpu/drm/msm/samsung/SELF_DISPLAY/self_display_cmd_FA7_AMB575WD01.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/S6E3FA7_AMB575WD01/dsi_panel_S6E3FA7_AMB575WD01_fhd_1185Mbps_octa_cmd.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/S6E3FA7_AMB575WD01/dsi_panel_S6E3FA7_AMB575WD01_fhd_octa_cmd.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/PBA_BOOTING/dsi_panel_PBA_BOOTING_fhd_video.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/SELF_DISPLAY/self_display_cmd_FA7_AMB575WD01.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/S6E3FA7_AMB575WD01/dsi_panel_S6E3FA7_AMB575WD01_fhd_1185Mbps_octa_cmd.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/S6E3FA7_AMB575WD01/dsi_panel_S6E3FA7_AMB575WD01_fhd_octa_cmd.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/PBA_BOOTING/dsi_panel_PBA_BOOTING_fhd_video.dtsi"
 
 #if 0
 /{

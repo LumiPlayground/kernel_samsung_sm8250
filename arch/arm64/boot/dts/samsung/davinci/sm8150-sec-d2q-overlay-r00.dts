@@ -18,16 +18,16 @@
 #include <dt-bindings/clock/qcom,rpmh.h>
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 
-#include "../qcom/sm8150-mtp.dtsi"
-#include "sm8150-sec-common.dtsi"
+#include /sm8150-mtp.dtsi"
+#include "../sm8150-sec-common.dtsi"
 #include "sm8150-sec-d2xq-pm-common.dtsi"
 #include "sm8150-sec-d2q-r00.dtsi"
 #include "sm8150-sec-d2q-pinctrl-r00.dtsi"
 #include "sm8150-sec-d2q-display-r00.dtsi"
 #include "sm8150-sec-d2q-displayport-r00.dtsi"
 #include "battery-data-d2q-r00.dtsi"
-#include "sm8150-max77705.dtsi"
-#include "sm8150-max77705-motor.dtsi"
+#include "../sm8150-max77705.dtsi"
+#include "../sm8150-max77705-motor.dtsi"
 #include "sm8150-sec-beyond2qlte-sensor-common.dtsi"
 #include "sm8150-sec-d2xq-fingerprint-sensor-r00.dtsi"
 #include "sm8150-camera-sensor-d2q-r00.dtsi"

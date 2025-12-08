@@ -18,10 +18,10 @@
 #include <dt-bindings/clock/qcom,rpmh.h>
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 
-#include "../qcom/sm8150-mtp.dtsi"
-#include "../qcom/sdx5xm-external-soc.dtsi"
-#include "../qcom/sm8150-sdx50m.dtsi"
-#include "sm8150-sec-common.dtsi"
+#include /sm8150-mtp.dtsi"
+#include /sdx5xm-external-soc.dtsi"
+#include /sm8150-sdx50m.dtsi"
+#include "../sm8150-sec-common.dtsi"
 #include "sm8150-sec-winnerxlte-pm-common.dtsi"
 #include "sm8150-sec-winnerx-input-common.dtsi"
 #include "sm8150-sec-winnerx-r06.dtsi"
@@ -30,7 +30,7 @@
 #include "sm8150-sec-winnerx-displayport-r00.dtsi"
 #include "sm8150-sec-winnerlte-fingerprint-sensor-r00.dtsi"
 #include "battery-data-winnerx-common.dtsi"
-#include "sm8150-max77705.dtsi"
+#include "../sm8150-max77705.dtsi"
 #include "sm8150-sec-winnerx-sensor-r01.dtsi"
 #include "sm8150-camera-sensor-winnerx-r00.dtsi"
 #include "sm8150-sec-beyondxq-nfc-r04.dtsi"

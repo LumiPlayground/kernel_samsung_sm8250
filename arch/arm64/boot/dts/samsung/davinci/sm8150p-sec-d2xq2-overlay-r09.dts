@@ -18,10 +18,10 @@
 #include <dt-bindings/clock/qcom,rpmh.h>
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 
-#include "../qcom/sm8150-mtp.dtsi"
-#include "../qcom/sdx5xm-external-soc.dtsi"
-#include "../qcom/sm8150-sdxprairie.dtsi"
-#include "sm8150-sec-common.dtsi"
+#include /sm8150-mtp.dtsi"
+#include /sdx5xm-external-soc.dtsi"
+#include /sm8150-sdxprairie.dtsi"
+#include "../sm8150-sec-common.dtsi"
 #include "sm8150-sec-d2xq-pm-common.dtsi"
 #include "sm8150-sec-d2xq-pm-r04.dtsi"
 #include "sm8150p-sec-d2xq2-r09.dtsi"
@@ -29,7 +29,7 @@
 #include "sm8150-sec-d2xq-display-r00.dtsi"
 #include "sm8150-sec-d2xq-displayport-r03.dtsi"
 #include "battery-data-d2xq-sub6-r09.dtsi"
-#include "sm8150-max77705.dtsi"
+#include "../sm8150-max77705.dtsi"
 #include "sm8150-cs40l2x-d2xq-sub6-r01.dtsi"
 #include "sm8150-sec-beyond2qlte-sensor-common.dtsi"
 #include "sm8150-sec-davincixq-fingerprint-sensor-r00.dtsi"

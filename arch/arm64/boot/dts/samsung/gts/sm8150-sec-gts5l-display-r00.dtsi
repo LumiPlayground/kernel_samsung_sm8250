@@ -10,8 +10,8 @@
  * GNU General Public License for more details.
  */
 #include <dt-bindings/pinctrl/qcom,pmic-gpio.h>
-#include "../../../../../drivers/gpu/drm/msm/samsung/ANA38401_AMSA05RB06/dsi_panel_ANA38401_AMSA05RB06_wqxga_octa_cmd.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/PBA_BOOTING/dsi_panel_PBA_BOOTING_fhd_video.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/ANA38401_AMSA05RB06/dsi_panel_ANA38401_AMSA05RB06_wqxga_octa_cmd.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/PBA_BOOTING/dsi_panel_PBA_BOOTING_fhd_video.dtsi"
 
 #define DEFAULT_FIXED_VAL	0
 

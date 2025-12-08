@@ -18,15 +18,15 @@
 #include <dt-bindings/clock/qcom,rpmh.h>
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 
-#include "../qcom/sm8150-mtp.dtsi"
-#include "sm8150-sec-common.dtsi"
+#include /sm8150-mtp.dtsi"
+#include "../sm8150-sec-common.dtsi"
 #include "sm8150-sec-bloomq-pm-common.dtsi"
 #include "sm8150-sec-bloomq-r08.dtsi"
 #include "sm8150-sec-bloomq-pinctrl-r08.dtsi"
 #include "sm8150-sec-bloomq-display-r04.dtsi"
 #include "sm8150-sec-bloomq-fingerprint-sensor-r01.dtsi"
 #include "sm8150-sec-bloomq-mst-r01.dtsi"
-#include "sm8150-max77705.dtsi"
+#include "../sm8150-max77705.dtsi"
 #include "battery-data-bloomq-common.dtsi"
 #include "sm8150-camera-sensor-bloomq-r01.dtsi"
 #include "sm8150-cs40l2x-bloomq.dtsi"

@@ -10,12 +10,12 @@
  * GNU General Public License for more details.
  */
 
-#include "../../../../../drivers/gpu/drm/msm/samsung/SELF_DISPLAY/self_display_cmd_XA0.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/S6E3XA0_AMB729WA01/dsi_panel_S6E3XA0_AMB729WA01_qxga_octa_cmd.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/SELF_DISPLAY/self_display_cmd_FA7.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/S6E3FA7_AMS628RF01/dsi_panel_S6E3FA7_AMS628RF01_fhd_octa_cmd.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/PBA_BOOTING/dsi_panel_PBA_BOOTING_fhd_video.dtsi"
-#include "../../../../../drivers/gpu/drm/msm/samsung/PBA_BOOTING_DSI1/dsi_panel_PBA_BOOTING_fhd_video_dsi1.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/SELF_DISPLAY/self_display_cmd_XA0.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/S6E3XA0_AMB729WA01/dsi_panel_S6E3XA0_AMB729WA01_qxga_octa_cmd.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/SELF_DISPLAY/self_display_cmd_FA7.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/S6E3FA7_AMS628RF01/dsi_panel_S6E3FA7_AMS628RF01_fhd_octa_cmd.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/PBA_BOOTING/dsi_panel_PBA_BOOTING_fhd_video.dtsi"
+#include "../../../../../../techpack/display/msm/samsung/PBA_BOOTING_DSI1/dsi_panel_PBA_BOOTING_fhd_video_dsi1.dtsi"
 
 /{
 	aliases {
